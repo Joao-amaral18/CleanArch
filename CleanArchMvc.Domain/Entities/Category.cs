@@ -23,7 +23,7 @@ public sealed class Category : Entity
         ValidateDomain(name);
     }
 
-    private ICollection<Product> Products { get; set; }
+    public ICollection<Product> Products { get; set; }
 
     private void ValidateDomain(string name)
     {

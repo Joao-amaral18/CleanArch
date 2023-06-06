@@ -47,7 +47,7 @@ public class CategoryUnitTest1
         Action action = () =>
         {
             var category = new Category(1, null);
-        };
+        }; 
         action.Should()
             .Throw<DomainExceptionValidation>()
             .WithMessage("Invalid name. Name is required.");

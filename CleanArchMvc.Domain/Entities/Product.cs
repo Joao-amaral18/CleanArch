@@ -56,7 +56,7 @@ public sealed class Product : Entity
 
         DomainExceptionValidation.When(
             image?.Length > 250 || image?.Length < 3,
-            "Invalid image. Image length has to be minimum 2 and maximum 250.");
+            "Invalid image. Image length has to be minimum 3 and maximum 250.");
     }
 
     public int CategoryId { get; set; }
